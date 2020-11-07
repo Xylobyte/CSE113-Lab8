@@ -1,0 +1,23 @@
+Donovan Griego
+11-1-2020
+Lab 7
+
+Purpose: To practice creating and using a makefile. To practice using arrays and structures.
+
+Conclusions:
+
+a) What I learned from this lab:
+I learned how to properly allocate and use strings as pointers in different functions.
+This is useful because I now know a more efficient way of writing functions that 
+have to do with arrays.
+
+b) How did the pair programming help/hinder the lab:
+The pair programming helped me because I got to practice writing functions that 
+referred to arrays as pointers. However, the pair programming did not allow me to 
+practice allocating memory for the arrays themselves.
+
+c) Issues and how I fixed them (bug report):
+I didn't have a lot of issues in this lab besides a couple of typos here and there.
+
+d) Improvements that can be made:
+In the future, I can improve my programs by breaking them down into more functions.
