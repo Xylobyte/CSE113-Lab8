@@ -13,7 +13,7 @@ struct node_t *create_node(double n);
 void print_node(struct node_t *node);
 void print_list(struct node_t *head);
 struct node_t *insert_head(struct node_t *head, struct node_t *node);
-void insert_tail(struct node_t *head, struct node_t *node);
+struct node_t * insert_tail(struct node_t *head, struct node_t *node);
 struct node_t *insert_middle(struct node_t *head, struct node_t *node, int pos);
 int count_nodes(struct node_t *head);
 struct node_t *find_node(struct node_t *head, double n);
@@ -53,10 +53,13 @@ int main() {
                         head = insert_head(head, create_node(doubleIn));
                         break;
                     case 2:
-                        insert_tail(head, create_node(doubleIn));
+                        head = insert_tail(head, create_node(doubleIn));
                         break;
                     case 3:
-
+                        printf("Enter a position for insert\n");
+                        printf(">> ");
+                        fgets(in, BUFFER, stdin);
+                        sscanf(in, "%d", &intIn);
                         break;
                 }
                 break;
@@ -105,12 +108,17 @@ struct node_t *insert_head(struct node_t *head, struct node_t *node) {
     return node;
 }
 
-void insert_tail(struct node_t *head, struct node_t *node) {
+struct node_t * insert_tail(struct node_t *head, struct node_t *node) {
+    if (head == NULL){
+        return insert_head(head, node);
+    }
+    struct node_t *h = head;
     while (head->next != NULL) 
     {
         head = head->next; 
     }
     head->next = node;
+    return h;
 }
 
 struct node_t *insert_middle(struct node_t *head, struct node_t *node, int pos) {
