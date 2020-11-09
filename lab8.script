@@ -1,0 +1,245 @@
+Script started on 2020-11-08 17:14:44-07:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="191" LINES="14"]
+]0;dxgriego@Parallels: ~/cse113/lab8[01;32mdxgriego@Parallels[00m:[01;34m~/cse113/lab8[00m$ gcc -g -Wall lab8.c -o lab8 -lm
+]0;dxgriego@Parallels: ~/cse113/lab8[01;32mdxgriego@Parallels[00m:[01;34m~/cse113/lab8[00m$ ./lab8
+
+1) Enter a number
+2) Delete a number
+3) Print all numbers
+4) Tell how many items are in the list
+5) Find a number in the list
+6) Quit
+>> 1
+
+Enter a number
+>> 12.3
+
+1) Insert at head
+2) Insert at tail
+3) Insert in middle
+>> 1
+
+1) Enter a number
+2) Delete a number
+3) Print all numbers
+4) Tell how many items are in the list
+5) Find a number in the list
+6) Quit
+>> 1
+
+Enter a number
+>> 43
+
+1) Insert at head
+2) Insert at tail
+3) Insert in middle
+>> 2
+
+1) Enter a number
+2) Delete a number
+3) Print all numbers
+4) Tell how many items are in the list
+5) Find a number in the list
+6) Quit
+>> 1
+
+Enter a number
+>> .4  0.54
+
+1) Insert at head
+2) Insert at tail
+3) Insert in middle
+>> 3
+Enter a position for insert
+>> 2
+
+1) Enter a number
+2) Delete a number
+3) Print all numbers
+4) Tell how many items are in the list
+5) Find a number in the list
+6) Quit
+>> 1
+
+Enter a number
+>> 43  25
+
+1) Insert at head
+2) Insert at tail
+3) Insert in middle
+>> 1
+
+1) Enter a number
+2) Delete a number
+3) Print all numbers
+4) Tell how many items are in the list
+5) Find a number in the list
+6) Quit
+>> 4
+
+There are 4 items in the list.
+
+1) Enter a number
+2) Delete a number
+3) Print all numbers
+4) Tell how many items are in the list
+5) Find a number in the list
+6) Quit
+>> 3
+
+Node            Data            Next           
+0x55a6e136fb20  25.000000       0x55a6e136fac0 
+0x55a6e136fac0  12.300000       0x55a6e136fb00 
+0x55a6e136fb00  0.540000        0x55a6e136fae0 
+0x55a6e136fae0  43.000000       (nil)          
+
+1) Enter a number
+2) Delete a number
+3) Print all numbers
+4) Tell how many items are in the list
+5) Find a number in the list
+6) Quit
+>> 1
+
+Enter a number
+>> 65.32
+
+1) Insert at head
+2) Insert at tail
+3) Insert in middle
+>> 3
+Enter a position for insert
+>> 3
+
+1) Enter a number
+2) Delete a number
+3) Print all numbers
+4) Tell how many items are in the list
+5) Find a number in the list
+6) Quit
+>> 3
+
+Node            Data            Next           
+0x55a6e136fb20  25.000000       0x55a6e136fac0 
+0x55a6e136fac0  12.300000       0x55a6e136fb40 
+0x55a6e136fb40  65.320000       0x55a6e136fb00 
+0x55a6e136fb00  0.540000        0x55a6e136fae0 
+0x55a6e136fae0  43.000000       (nil)          
+
+1) Enter a number
+2) Delete a number
+3) Print all numbers
+4) Tell how many items are in the list
+5) Find a number in the list
+6) Quit
+>> 5
+Enter a value to find in the list
+>> 65.32
+
+The value was found in the list
+Node            Data            Next           
+0x55a6e136fb40  65.320000       0x55a6e136fb00 
+
+1) Enter a number
+2) Delete a number
+3) Print all numbers
+4) Tell how many items are in the list
+5) Find a number in the list
+6) Quit
+>> 5
+Enter a value to find in the list
+>> 0
+
+The value was not found in the list
+
+1) Enter a number
+2) Delete a number
+3) Print all numbers
+4) Tell how many items are in the list
+5) Find a number in the list
+6) Quit
+>> 2
+Enter a value to delete from the list
+>> 65.32
+
+1) Enter a number
+2) Delete a number
+3) Print all numbers
+4) Tell how many items are in the list
+5) Find a number in the list
+6) Quit
+>> 3
+
+Node            Data            Next           
+0x55a6e136fb20  25.000000       0x55a6e136fac0 
+0x55a6e136fac0  12.300000       0x55a6e136fb00 
+0x55a6e136fb00  0.540000        0x55a6e136fae0 
+0x55a6e136fae0  43.000000       (nil)          
+
+1) Enter a number
+2) Delete a number
+3) Print all numbers
+4) Tell how many items are in the list
+5) Find a number in the list
+6) Quit
+>> 5
+Enter a value to find in the list
+>> 65.32
+
+The value was not found in the list
+
+1) Enter a number
+2) Delete a number
+3) Print all numbers
+4) Tell how many items are in the list
+5) Find a number in the list
+6) Quit
+>> 2
+Enter a value to delete from the list
+>> 25
+
+1) Enter a number
+2) Delete a number
+3) Print all numbers
+4) Tell how many items are in the list
+5) Find a number in the list
+6) Quit
+>> 3
+
+Node            Data            Next           
+0x55a6e136fac0  12.300000       0x55a6e136fb00 
+0x55a6e136fb00  0.540000        0x55a6e136fae0 
+0x55a6e136fae0  43.000000       (nil)          
+
+1) Enter a number
+2) Delete a number
+3) Print all numbers
+4) Tell how many items are in the list
+5) Find a number in the list
+6) Quit
+>> 2
+Enter a value to delete from the list
+>> 43
+
+1) Enter a number
+2) Delete a number
+3) Print all numbers
+4) Tell how many items are in the list
+5) Find a number in the list
+6) Quit
+>> 3
+
+Node            Data            Next           
+0x55a6e136fac0  12.300000       0x55a6e136fb00 
+0x55a6e136fb00  0.540000        (nil)          
+
+1) Enter a number
+2) Delete a number
+3) Print all numbers
+4) Tell how many items are in the list
+5) Find a number in the list
+6) Quit
+>> 6
+]0;dxgriego@Parallels: ~/cse113/lab8[01;32mdxgriego@Parallels[00m:[01;34m~/cse113/lab8[00m$ exit
+exit
+
+Script done on 2020-11-08 17:17:17-07:00 [COMMAND_EXIT_CODE="0"]
