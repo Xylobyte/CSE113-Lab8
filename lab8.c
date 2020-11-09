@@ -1,3 +1,9 @@
+/**
+ * @file lab8.c
+ * @author Donovan Griego
+ * @brief Creates a list based on user input
+ * @date 2020-11-08
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -101,6 +107,12 @@ int main() {
     return 0;
 }
 
+/**
+ * @brief Creates a node with the specified value
+ * 
+ * @param n value to set data to
+ * @return struct node_t* created node
+ */
 struct node_t *create_node(double n) {
     struct node_t *node = malloc(sizeof(struct node_t));
     node->data = n;
@@ -108,10 +120,20 @@ struct node_t *create_node(double n) {
     return node;
 }
 
+/**
+ * @brief prints the info of a given node
+ * 
+ * @param node node to print
+ */
 void print_node(struct node_t *node) {
     printf("%-15p %-15lf %-15p\n", node, node->data, node->next);
 }
 
+/**
+ * @brief prints the list in its entirety
+ * 
+ * @param head head of the list
+ */
 void print_list(struct node_t *head) {
     printf("\n%-15s %-15s %-15s\n", "Node", "Data", "Next");
     while (head != NULL) 
@@ -121,11 +143,25 @@ void print_list(struct node_t *head) {
     }
 }
 
+/**
+ * @brief Inserts a node at the head of the list
+ * 
+ * @param head head of the list
+ * @param node node to insert
+ * @return struct node_t* head of the list
+ */
 struct node_t *insert_head(struct node_t *head, struct node_t *node) {
     node->next = head;
     return node;
 }
 
+/**
+ * @brief Inserts a node at the tail of the list
+ * 
+ * @param head head of the list
+ * @param node node to insert
+ * @return struct node_t* head of the list
+ */
 struct node_t * insert_tail(struct node_t *head, struct node_t *node) {
     if (head == NULL){
         return insert_head(head, node);
@@ -139,6 +175,14 @@ struct node_t * insert_tail(struct node_t *head, struct node_t *node) {
     return h;
 }
 
+/**
+ * @brief Inserts a node into a specified position in the list
+ * 
+ * @param head head of the list
+ * @param node node to insert
+ * @param pos position to insert at
+ * @return struct node_t* head of the list
+ */
 struct node_t *insert_middle(struct node_t *head, struct node_t *node, int pos) {
     if ((head == NULL || pos == 1) && pos > 0){
         return insert_head(head, node);
@@ -160,6 +204,12 @@ struct node_t *insert_middle(struct node_t *head, struct node_t *node, int pos) 
     }
 }
 
+/**
+ * @brief Counts the number of nodes in the list
+ * 
+ * @param head head of the list
+ * @return int number of nodes in the list
+ */
 int count_nodes(struct node_t *head) {
     if(head == NULL){
         return 0;
@@ -173,6 +223,13 @@ int count_nodes(struct node_t *head) {
     return i;
 }
 
+/**
+ * @brief Finds if a value exists in the list
+ * 
+ * @param head head of the list
+ * @param n number to find
+ * @return struct node_t* address of the found node
+ */
 struct node_t *find_node(struct node_t *head, double n) {
     if(head == NULL){
         printf("\nThere are no numbers in the list\n");
@@ -194,6 +251,13 @@ struct node_t *find_node(struct node_t *head, double n) {
     }
 }
 
+/**
+ * @brief Frees a given node and fixes the order of the list
+ * 
+ * @param head head of the list
+ * @param n node to free
+ * @return struct node_t* the head of the list
+ */
 struct node_t *delete_node(struct node_t *head, double n) {
     if(head == NULL){
         printf("\nThere are no numbers in the list\n");
@@ -230,6 +294,11 @@ struct node_t *delete_node(struct node_t *head, double n) {
     return h;
 }
 
+/**
+ * @brief Frees every element in a list
+ * 
+ * @param head head of the list to free
+ */
 void delete_list(struct node_t *head) {
     if(head == NULL){
         return;
