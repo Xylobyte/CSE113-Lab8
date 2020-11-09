@@ -1,23 +1,26 @@
 Donovan Griego
-11-1-2020
-Lab 7
+11-8-2020
+Lab 8
 
-Purpose: To practice creating and using a makefile. To practice using arrays and structures.
+Purpose: To practice creating and managing linked list structures.
 
 Conclusions:
 
 a) What I learned from this lab:
-I learned how to properly allocate and use strings as pointers in different functions.
-This is useful because I now know a more efficient way of writing functions that 
-have to do with arrays.
+I learned how to properly allocate and manage memory for linked list structures 
+and prevent memory leaks in a program. This is useful because linked lists are 
+incredibly useful when an array just wont do.
 
 b) How did the pair programming help/hinder the lab:
-The pair programming helped me because I got to practice writing functions that 
-referred to arrays as pointers. However, the pair programming did not allow me to 
-practice allocating memory for the arrays themselves.
+The pair programming helped me because I got to visuallize how to add/delete nodes 
+in an existing linked list. This helped with the lab because I had to execute these
+procedures correctly in the lab.
 
 c) Issues and how I fixed them (bug report):
-I didn't have a lot of issues in this lab besides a couple of typos here and there.
+The only issue I had was in the collatz program where when I freed the list it didn't 
+free all nodes. The issue was I had edited my head pointer to itterate earlier and I 
+no longer had a reference to the beginning. I fixed this by creating an additional 
+reference to my head.
 
 d) Improvements that can be made:
-In the future, I can improve my programs by breaking them down into more functions.
+In the future, I can improve my programs by using less unnecessary variables.
