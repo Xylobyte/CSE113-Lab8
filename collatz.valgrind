@@ -1,0 +1,68 @@
+Script started on 2020-11-08 17:49:09-07:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="191" LINES="14"]
+]0;dxgriego@Parallels: ~/cse113/lab8[01;32mdxgriego@Parallels[00m:[01;34m~/cse113/lab8[00m$ exitvalgrind --leak-check=full ./lab8[K[K[K[Kcollatz 
+==161735== Memcheck, a memory error detector
+==161735== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==161735== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==161735== Command: ./collatz
+==161735== 
+
+Enter a value for n
+>> 3
+n = 3
+cycle length = 8
+3 10 5 16 8 4 2 1 
+==161735== 
+==161735== HEAP SUMMARY:
+==161735==     in use at exit: 0 bytes in 0 blocks
+==161735==   total heap usage: 10 allocs, 10 frees, 2,176 bytes allocated
+==161735== 
+==161735== All heap blocks were freed -- no leaks are possible
+==161735== 
+==161735== For lists of detected and suppressed errors, rerun with: -s
+==161735== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+]0;dxgriego@Parallels: ~/cse113/lab8[01;32mdxgriego@Parallels[00m:[01;34m~/cse113/lab8[00m$ valgrind --leak-check=full ./collatz 
+==161748== Memcheck, a memory error detector
+==161748== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==161748== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==161748== Command: ./collatz
+==161748== 
+
+Enter a value for n
+>> 1000
+n = 1000
+cycle length = 112
+1000 500 250 125 376 188 94 47 142 71 214 107 322 161 484 242 121 364 182 91 274 137 412 206 103 310 155 466 233 700 350 175 526 263 790 395 1186 593 1780 890 445 1336 668 334 167 502 251 754 377 1132 566 283 850 425 1276 638 319 958 479 1438 719 2158 1079 3238 1619 4858 2429 7288 3644 1822 911 2734 1367 4102 2051 6154 3077 9232 4616 2308 1154 577 1732 866 433 1300 650 325 976 488 244 122 61 184 92 46 23 70 35 106 53 160 80 40 20 10 5 16 8 4 2 1 
+==161748== 
+==161748== HEAP SUMMARY:
+==161748==     in use at exit: 0 bytes in 0 blocks
+==161748==   total heap usage: 114 allocs, 114 frees, 3,840 bytes allocated
+==161748== 
+==161748== All heap blocks were freed -- no leaks are possible
+==161748== 
+==161748== For lists of detected and suppressed errors, rerun with: -s
+==161748== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+]0;dxgriego@Parallels: ~/cse113/lab8[01;32mdxgriego@Parallels[00m:[01;34m~/cse113/lab8[00m$ valgrind --leak-check=full ./collatz 
+==161770== Memcheck, a memory error detector
+==161770== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==161770== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==161770== Command: ./collatz
+==161770== 
+
+Enter a value for n
+>> 10000
+n = 10000
+cycle length = 30
+10000 5000 2500 1250 625 1876 938 469 1408 704 352 176 88 44 22 11 34 17 52 26 13 40 20 10 5 16 8 4 2 1 
+==161770== 
+==161770== HEAP SUMMARY:
+==161770==     in use at exit: 0 bytes in 0 blocks
+==161770==   total heap usage: 32 allocs, 32 frees, 2,528 bytes allocated
+==161770== 
+==161770== All heap blocks were freed -- no leaks are possible
+==161770== 
+==161770== For lists of detected and suppressed errors, rerun with: -s
+==161770== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+]0;dxgriego@Parallels: ~/cse113/lab8[01;32mdxgriego@Parallels[00m:[01;34m~/cse113/lab8[00m$ exit
+exit
+
+Script done on 2020-11-08 17:49:30-07:00 [COMMAND_EXIT_CODE="0"]
